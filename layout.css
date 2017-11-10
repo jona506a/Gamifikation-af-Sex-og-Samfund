@@ -1,4 +1,28 @@
+/* -----------GENERALT START----------- */
+
 body {
     margin: 0;
     padding: 0;
 }
+
+
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+/* -----------GENERALT SLUT----------- */
+
+/* -----------BACKGROUND START----------- */
+
+#background {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/baggrund.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+/* -----------BACKGROUND SLUT----------- */
