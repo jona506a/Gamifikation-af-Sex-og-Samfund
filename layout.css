@@ -18,7 +18,7 @@ body {
 /* -----------BACKGROUND START----------- */
 
 #background {
-    z-index: 10;
+    z-index: 1;
     width: 100vw;
     height: 56.25vw;
     background-image: url(image/baggrund.svg);
@@ -31,7 +31,7 @@ body {
 /* -----------MELLEMGRUND START----------- */
 
 #mellemgrund {
-    z-index: 20;
+    z-index: 2;
     width: 100vw;
     height: 56.25vw;
     background-image: url(image/mellemgrund.svg);
@@ -43,8 +43,8 @@ body {
 
 /* -----------FORGRUND START----------- */
 
-#mellemgrund {
-    z-index: 30;
+#forgrund {
+    z-index: 3;
     width: 100vw;
     height: 56.25vw;
     background-image: url(image/forgrund.svg);
@@ -53,3 +53,57 @@ body {
 }
 
 /* -----------FORGRUND SLUT----------- */
+
+/* -----------ARTIG BILLEDER START----------- */
+
+#mobile_container {
+    z-index: 3;
+    width: 45vw;
+    height: 30vw;
+    background-image: url(image/artigbilleder_spritesheet.png);
+    background-size: 200%;
+    position: absolute;
+    top: 29%;
+    left: 29%
+}
+
+/* -----------ARTIG BILLEDER SLUT----------- */
+
+/* -----------KNAPPER START----------- */
+
+#knap_del {
+    z-index: 3;
+    width: 27vw;
+    height: 10vw;
+    background-image: url(image/del.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 82%;
+    left: 25%
+}
+
+#knap_del_ikke {
+    z-index: 3;
+    width: 27vw;
+    height: 10vw;
+    background-image: url(image/del_ikke.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 82%;
+    left: 51%
+}
+
+/* -----------KNAPPER SLUT----------- */
+
+/* -----------MR PICKLE START----------- */
+
+#mrpickle_sprite {
+    z-index: 3;
+    width: 15vw;
+    height: 21.3vw;
+    background-image: url(image/pickle.png);
+    background-size: 100%;
+    position: absolute;
+    top: 60%;
+    left: 3%
+}
