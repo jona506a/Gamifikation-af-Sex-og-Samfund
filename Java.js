@@ -1,1 +1,7 @@
-$(window).on("load", startStory);
+$(window).on("load", StartStory);
+
+
+
+function StartStory() {
+    console.log("Historien er startet");
+}
