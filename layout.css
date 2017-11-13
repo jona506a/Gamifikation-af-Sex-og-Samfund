@@ -15,6 +15,46 @@ body {
 
 /* -----------GENERALT SLUT----------- */
 
+/* -----------START SCENE START----------- */
+
+#start_scene {
+    z-index: 1;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/intro_scene_Artboard%201.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+#start_knap {
+    z-index: 1;
+    width: 30vw;
+    height: 7.3vw;
+    background-image: url(image/start_knap.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 78%;
+    left: 65%;
+}
+
+#del_tekst {
+    font-size: 4vw;
+    position: absolute;
+    top: 43vw;
+    left: 15vw;
+    transform: rotate(-7deg);
+}
+
+#del_ikke_tekst {
+    font-size: 2.9vw;
+    position: absolute;
+    top: 43vw;
+    left: 27.8vw;
+    transform: rotate(-7deg);
+}
+
+/* -----------START SCENE SLUT----------- */
+
 /* -----------BACKGROUND START----------- */
 
 #background {
