@@ -56,11 +56,24 @@ body {
 
 /* -----------ARTIG BILLEDER START----------- */
 
-#mobile_container {
+#upassende_sprite {
     z-index: 3;
     width: 45vw;
     height: 30vw;
     background-image: url(image/uartigbilleder_spritesheet.svg);
+    background-size: 200%;
+    position: absolute;
+    top: 29%;
+    left: 29%;
+    border: solid 1px #A9A9A9;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+#passende_sprite {
+    z-index: 3;
+    width: 45vw;
+    height: 30vw;
+    background-image: url(image/artigbilleder_spritesheet.svg);
     background-size: 200%;
     position: absolute;
     top: 29%;
