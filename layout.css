@@ -386,6 +386,7 @@ body {
 
 }
 
+
 .u_billede_9 {
 
     animation-name: u_billede_9;
@@ -396,13 +397,171 @@ body {
 
 @keyframes u_billede_9 {
     0% {
-        background-position: 100% 37.5%;
+        background-position: 0 50%;
     }
     100% {
-        background-position: 100% 37.5%;
+        background-position: 0 50%;
     }
 
 }
+
+.u_billede_10 {
+
+    animation-name: u_billede_10;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_10 {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.u_billede_11 {
+
+    animation-name: u_billede_11;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_11 {
+    0% {
+        background-position: 0% 62.5%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.u_billede_12 {
+
+    animation-name: u_billede_12;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_12 {
+    0% {
+        background-position: 100% 62.5%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.u_billede_13 {
+
+    animation-name: u_billede_13;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_13 {
+    0% {
+        background-position: 0% 75%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_14 {
+
+    animation-name: u_billede_14;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_14 {
+    0% {
+        background-position: 100% 75%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_15 {
+
+    animation-name: u_billede_15;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_15 {
+    0% {
+        background-position: 0 87.5%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_16 {
+
+    animation-name: u_billede_16;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_16 {
+    0% {
+        background-position: 100% 87.5%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_17 {
+
+    animation-name: u_billede_17;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_17 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.u_billede_18 {
+
+    animation-name: u_billede_18;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes u_billede_18 {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
 
 
 /* ___________ BILLEDE POSITIONS KLASSIFIKATIONER SLUT -----------*/
