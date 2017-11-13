@@ -64,7 +64,8 @@ body {
     background-size: 100%;
     position: absolute;
     top: 82%;
-    left: 25%
+    left: 25%;
+    cursor: pointer;
 }
 
 #knap_del_ikke {
@@ -75,7 +76,8 @@ body {
     background-size: 100%;
     position: absolute;
     top: 82%;
-    left: 51%
+    left: 51%;
+    cursor: pointer;
 }
 
 /* -----------KNAPPER SLUT----------- */
@@ -102,7 +104,7 @@ body {
     width: 45vw;
     height: 30vw;
     background-image: url(image/uartigbilleder_spritesheet.svg);
-    background-size: 200%;
+    background-size: 200% 900%;
     position: absolute;
     top: 29%;
     left: 29%;
