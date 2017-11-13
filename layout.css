@@ -54,6 +54,47 @@ body {
 
 /* -----------FORGRUND SLUT----------- */
 
+/* -----------KNAPPER START----------- */
+
+#knap_del {
+    z-index: 3;
+    width: 27vw;
+    height: 10vw;
+    background-image: url(image/del.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 82%;
+    left: 25%
+}
+
+#knap_del_ikke {
+    z-index: 3;
+    width: 27vw;
+    height: 10vw;
+    background-image: url(image/del_ikke.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 82%;
+    left: 51%
+}
+
+/* -----------KNAPPER SLUT----------- */
+
+/* -----------MR PICKLE START----------- */
+
+#mrpickle_sprite {
+    z-index: 3;
+    width: 10vw;
+    height: 20vw;
+    background-image: url(image/charlie_sprite.svg);
+    background-size: 200%;
+    position: absolute;
+    top: 63%;
+    left: 5%
+}
+
+/* -----------MR PICKLE SLUT----------- */
+
 /* -----------ARTIG BILLEDER START----------- */
 
 #upassende_sprite {
@@ -565,42 +606,3 @@ body {
 
 
 /* ___________ BILLEDE POSITIONS KLASSIFIKATIONER SLUT -----------*/
-
-/* -----------KNAPPER START----------- */
-
-#knap_del {
-    z-index: 3;
-    width: 27vw;
-    height: 10vw;
-    background-image: url(image/del.svg);
-    background-size: 100%;
-    position: absolute;
-    top: 82%;
-    left: 25%
-}
-
-#knap_del_ikke {
-    z-index: 3;
-    width: 27vw;
-    height: 10vw;
-    background-image: url(image/del_ikke.svg);
-    background-size: 100%;
-    position: absolute;
-    top: 82%;
-    left: 51%
-}
-
-/* -----------KNAPPER SLUT----------- */
-
-/* -----------MR PICKLE START----------- */
-
-#mrpickle_sprite {
-    z-index: 3;
-    width: 10vw;
-    height: 20vw;
-    background-image: url(image/charlie_sprite.svg);
-    background-size: 200%;
-    position: absolute;
-    top: 63%;
-    left: 5%
-}
