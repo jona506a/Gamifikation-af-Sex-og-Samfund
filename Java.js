@@ -10,7 +10,6 @@ function StartStory() {
 }
 
 
-
 function niveau1() {
     niveau1_klik++;
     console.log("Niveau 1 - start");
