@@ -1,5 +1,12 @@
-$(window).on("load", StartStory);
+$(window).on("load", start);
 
+function start() {
+    $("#start_knap").on("click", begyndSpil);
+}
+
+function begyndSpil() {
+    location.href = "https://www.google.dk/";
+}
 
 
 function StartStory() {
