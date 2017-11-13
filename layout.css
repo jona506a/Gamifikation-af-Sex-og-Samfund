@@ -60,7 +60,7 @@ body {
     z-index: 3;
     width: 45vw;
     height: 30vw;
-    background-image: url(image/uartigbilleder_spritesheet.png);
+    background-image: url(image/uartigbilleder_spritesheet.svg);
     background-size: 200%;
     position: absolute;
     top: 29%;
