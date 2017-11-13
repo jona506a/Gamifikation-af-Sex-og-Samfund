@@ -101,11 +101,11 @@ body {
 
 #mrpickle_sprite {
     z-index: 3;
-    width: 15vw;
-    height: 21.3vw;
-    background-image: url(image/pickle.png);
-    background-size: 100%;
+    width: 10vw;
+    height: 20vw;
+    background-image: url(image/charlie_sprite.svg);
+    background-size: 200%;
     position: absolute;
-    top: 60%;
-    left: 3%
+    top: 63%;
+    left: 5%
 }
