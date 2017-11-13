@@ -70,7 +70,7 @@ body {
 }
 
 #passende_sprite {
-    z-index: 3;
+    z-index: 4;
     width: 45vw;
     height: 30vw;
     background-image: url(image/artigbilleder_spritesheet.svg);
@@ -83,6 +83,71 @@ body {
 }
 
 /* -----------ARTIG BILLEDER SLUT----------- */
+
+/* ___________ BILLEDE POSITIONS KLASSIFIKATIONER START -----------*/
+
+/* PASSENDE */
+
+.p_billede_1 {
+
+    animation-name: p_billede_1;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_1 {
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 0 0%;
+    }
+
+}
+
+.p_billede_2 {
+
+    animation-name: p_billede_2;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_2 {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+
+}
+
+
+.p_billede_3 {
+
+    animation-name: p_billede_3;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p_billede_3 {
+    0% {
+        background-position: 0 12.5%;
+    }
+    100% {
+        background-position: 0 0%;
+    }
+
+}
+
+
+
+/* UPASSENDE */
+
+/* ___________ BILLEDE POSITIONS KLASSIFIKATIONER SLUT -----------*/
 
 /* -----------KNAPPER START----------- */
 
