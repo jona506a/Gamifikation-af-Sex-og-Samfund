@@ -1,0 +1,91 @@
+/* -----------GENERALT START----------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "futura-pt", sans-serif;
+    font-size: 16px;
+}
+
+/* -----------TYPOGRAFI----------- */
+
+h1 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+p {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*
+css
+  font-weight: 400; book
+  font-weight: 600; demi
+  font-weight: 800; xtra bold
+usage:
+h1 {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  }
+*/
+
+/* -----------SCENE----------- */
+
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+/* -----------GENERALT SLUT----------- */
+
+/* -----------BACKGROUND START----------- */
+
+#background {
+    z-index: 10;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/baggrund.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+/* -----------BACKGROUND SLUT----------- */
+
+/* -----------MELLEMGRUND START----------- */
+
+#mellemgrund {
+    z-index: 20;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/mellemgrund.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+/* -----------MELLEMGRUND SLUT----------- */
+
+/* -----------FORGRUND START----------- */
+
+#mellemgrund {
+    z-index: 30;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/forgrund.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+/* -----------FORGRUND SLUT----------- */
