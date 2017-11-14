@@ -1,17 +1,23 @@
-$(window).on("load", start);
-
-function start() {
-    $("#start_knap").on("click", begyndSpil);
-}
-
-function begyndSpil() {
-    location.href = "https://www.google.dk/";
-}
-
+$(window).on("load", StartStory);
+var niveau1_klik = 0;
+var er_niveau1_faerdig = false;
 
 function StartStory() {
     console.log("Historien er startet");
     $("#mrpickle_sprite").addClass("mrpickle_sprite");
+    niveau1();
+
+}
+
+
+function niveau1() {
+    niveau1_klik++;
+    console.log("Niveau 1 - start");
+    if (niveau1_klik == 4) {
+        er_niveau1_faerdig = true;
+
+        niveau2();
+    }
 
     $("#knap_del").on("click", randomValg1);
     $("#knap_del_ikke").on("click", randomValg1);
@@ -42,7 +48,7 @@ function upassende() {
     console.log("mitRandomTalX", mitRandomTalX);
     console.log("mitRandomTalY", mitRandomTalY);
     $("#upassende_sprite").css("background-position", (-mitRandomTalX * 100) + "% " + (-mitRandomTalY * 100) + "%");
-    /* $("#upassende_sprite").css("background-position", -(mitRandomTal * 100) + "% -200%");*/
+    niveau1_restart();
 }
 /* -----------UPASSENDE BILLEDER----------- */
 
@@ -56,31 +62,21 @@ function passende() {
     console.log("mitRandomTalX", mitRandomTalX);
     console.log("mitRandomTalY", mitRandomTalY);
     $("#passende_sprite").css("background-position", (-mitRandomTalX * 100) + "% " + (-mitRandomTalY * 100) + "%");
+
+    niveau1_restart();
 }
 
-
-
-
-
-/*function Del() {
-    console.log("Del billede");
-    /* $("#knap_del").off("click", Del);
-     $("#knap_del_ikke").off("click", Del_ikke);
-
-
-    var mitRandomTal = Math.floor(Math.random() * 18);
-    console.log("mitRandomTal", mitRandomTal);
-
-    $("#upassende_sprite").css("background-position", -(mitRandomTal * 100) + "% -200%");
+function niveau1_restart() {
+    console.log("neveau1_restart")
+    $("#knap_del").off("click", randomValg1);
+    $("#knap_del_ikke").off("click", randomValg1);
+    setTimeout(niveau1, 2000);
+    //niveau1();
 }
 
-function Del_ikke() {
-    console.log("Del Ikke");
-    $("#knap_del").off("click", Del);
-    $("#knap_del_ikke").off("click", Del_ikke);
+//---- NIVEAU2 START -----
+function niveau2() {
 
-    var mitRandomTal = Math.floor(Math.random() * 18);
-    console.log("mitRandomTal", mitRandomTal);
+    console.log("Niveau 2 - start");
 
-    $("#upassende_sprite").css("background-position", -(mitRandomTal * 100) + "% -200%");
-} */
+}
