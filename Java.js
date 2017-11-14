@@ -5,6 +5,7 @@ var er_den_passende;
 var the_score = 0;
 var theTimer;
 var svar_tid = 10000;
+var pickle_score = 4;
 
 function StartStory() {
     //  console.log("Historien er startet");
@@ -97,7 +98,16 @@ function del_ikke_klik() {
 }
 
 function styr_mr_pickle() {
+    console.log("PICKLE ANIMATION");
+    if (pickle_score == 1) {
+        $("#mrpickle_sprite").addClass("mrpickle_happy1");
 
+
+    } else if (pickle_score == 2) {
+        $("#mrpickle_sprite").removeClass("mrpickle_happy1");
+        $("#mrpickle_sprite").addClass("mrpickle_happy2");
+
+    }
     //Logik til mr Pickles spritesheet
     //    if else if etc.
 
