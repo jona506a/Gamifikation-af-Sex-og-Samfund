@@ -122,6 +122,65 @@ body {
 
 /* -----------KNAPPER SLUT----------- */
 
+/* -----------BILLEDE CONTAINER START----------- */
+
+#billede_container {
+    position: absolute;
+    top: 29%;
+    left: 29%;
+}
+
+.billed_postn {}
+
+/***** BTNS TRIGGER ANI ****/
+
+.out_left {
+    animation: out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 4;
+}
+
+@keyframes out_kf {
+    0% {
+        top: 29%;
+        left: 29%;
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: translate(-170%, -20%);
+    }
+}
+
+.out_right {
+    animation: out_right_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 4;
+}
+
+@keyframes out_right_kf {
+    0% {
+        top: 29%;
+        left: 29%;
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: translate(170%, -20%);
+    }
+}
+
+/* -----------BILLEDE CONTAINER SLUT----------- */
+
 /* -----------MR PICKLE START----------- */
 
 #mrpickle_sprite {
