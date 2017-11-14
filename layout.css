@@ -130,7 +130,11 @@ body {
     left: 29%;
 }
 
-.billed_postn {}
+.billed_postn {
+    position: absolute;
+    top: 29%;
+    left: 29%;
+}
 
 /***** BTNS TRIGGER ANI ****/
 

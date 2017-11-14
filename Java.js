@@ -2,6 +2,7 @@ $(window).on("load", StartStory);
 var niveau1_klik = 0;
 var er_niveau1_faerdig = false;
 var er_den_passende;
+var er_den_upassende;
 var the_score = 0;
 var theTimer;
 var svar_tid = 10000;
@@ -9,16 +10,18 @@ var pickle_score = 4;
 
 function StartStory() {
     //  console.log("Historien er startet");
-    $("#mrpickle_sprite").addClass("mrpickle_sprite");
+    $("#mrpickle_sprite").addClass("mrpickle_happy4");
     startSpm();
 }
 
 function startSpm() {
 
-    console.log("START SPØrgsmål the_score", the_score);
+    //$("#billede_container").removeClass();
+    //$("#billede_container").addClass(billed_postn);
+    console.log("START spørgsmål the_score", the_score);
     knapperOff();
     clearTimeout(theTimer);
-    if (niveau1_klik == 9) {
+    if (niveau1_klik == 40) {
         console.log("Spillet er Slut!");
 
     } else {
@@ -38,22 +41,31 @@ function tidenErGaaet() {
 
     startSpm();
 
-
-
-
-
 }
 
 function niveau1() {
 
     niveau1_klik++;
     console.log("niveau1_klik", niveau1_klik);
-    if (niveau1_klik == 4) {
+    if (niveau1_klik == 5) {
         // timertiden skal sættes ned
-        svar_tid = 5000;
+        svar_tid = 8000;
 
-    } else if (niveau1_klik == 7) {
-        svar_tid = 1000;
+    } else if (niveau1_klik == 9) {
+        svar_tid = 6000;
+
+    }
+    if (niveau1_klik == 12) {
+        // timertiden skal sættes ned
+        svar_tid = 4000;
+
+    } else if (niveau1_klik == 16) {
+        svar_tid = 2000;
+
+    }
+    if (niveau1_klik == 20) {
+        // timertiden skal sættes ned
+        svar_tid = 400;
 
     }
     console.log("svar_tid", svar_tid);
@@ -72,13 +84,14 @@ function del_klik() {
     // $("#passende_sprite").addClass("out_left");
 
     if (er_den_passende == true) {
+        console.log("passende delt");
 
         pickle_score++;
 
     } else {
         pickle_score--;
-
     }
+
 
     styr_mr_pickle();
     startSpm();
@@ -89,18 +102,20 @@ function del_ikke_klik() {
     // $("#upassende_sprite").addClass("out_right");
 
     if (er_den_passende == true) {
+        console.log("passende ikke delt");
 
         pickle_score++;
 
     } else {
-        pickle_score--;
-
+        pickle_score++;
     }
 
 
     styr_mr_pickle();
     startSpm();
 }
+
+
 
 function styr_mr_pickle() {
     console.log("PICKLE ANIMATION");
@@ -114,39 +129,40 @@ function styr_mr_pickle() {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy2");
 
+
+    }
+    if (pickle_score == 5) {
+        $("#mrpickle_sprite").removeClass();
+        $("#mrpickle_sprite").addClass("mrpickle_happy3");
+
     }
 
+    if (pickle_score == 4) {
+        $("#mrpickle_sprite").removeClass();
+        $("#mrpickle_sprite").addClass("mrpickle_happy4");
+
+    }
+
+    if (pickle_score == 3) {
+        $("#mrpickle_sprite").removeClass();
+        $("#mrpickle_sprite").addClass("mrpickle_happy5");
+
+    }
+
+    if (pickle_score == 2) {
+        $("#mrpickle_sprite").removeClass();
+        $("#mrpickle_sprite").addClass("mrpickle_happy6");
+
+    }
+
+
+    if (pickle_score == 1) {
+        $("#mrpickle_sprite").removeClass();
+        $("#mrpickle_sprite").addClass("mrpickle_happy7");
+
+    }
 }
-if (pickle_score == 5) {
-    $("#mrpickle_sprite").removeClass();
-    $("#mrpickle_sprite").addClass("mrpickle_happy3");
 
-}
-
-if (pickle_score == 4) {
-    $("#mrpickle_sprite").removeClass();
-    $("#mrpickle_sprite").addClass("mrpickle_happy4");
-
-}
-
-if (pickle_score == 3) {
-    $("#mrpickle_sprite").removeClass();
-    $("#mrpickle_sprite").addClass("mrpickle_happy5");
-
-}
-
-if (pickle_score == 2) {
-    $("#mrpickle_sprite").removeClass();
-    $("#mrpickle_sprite").addClass("mrpickle_happy6");
-
-}
-
-
-if (pickle_score == 1) {
-    $("#mrpickle_sprite").removeClass();
-    $("#mrpickle_sprite").addClass("mrpickle_happy7");
-
-}
 //Logik til mr Pickles spritesheet
 //    if else if etc.
 
@@ -158,7 +174,7 @@ function randomValg1() {
     // Vi laver variablen her, fordi
     var random = Math.random();
     // var random = 1;
-    if (random > 0.5) {
+    if (random > 0.3) {
         upassende();
         er_den_passende = false;
     } else {
@@ -172,7 +188,7 @@ function upassende() {
     $("#upassende_sprite").show();
     $("#passende_sprite").hide();
 
-    var er_den_passende = true;
+    var er_den_upassende = true;
     var mitRandomTalX = Math.floor(Math.random() * 2);
     var mitRandomTalY = Math.floor(Math.random() * 9);
     console.log("mitRandomTalX", mitRandomTalX);
