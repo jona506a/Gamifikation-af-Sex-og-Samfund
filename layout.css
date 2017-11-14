@@ -167,6 +167,136 @@ body {
 
 /* -----------ARTIG BILLEDER SLUT----------- */
 
+/*--------- mr pickle sprite -------------*/
+
+.mrpickle_happy1 {
+
+    animation-name: mrpickle_happy1;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy1 {
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+
+}
+
+.mrpickle_happy2 {
+
+    animation-name: mrpickle_happy2;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy2 {
+    0% {
+        background-position: 0% 17%;
+    }
+    100% {
+        background-position: 200% 17%;
+    }
+
+}
+
+.mrpickle_happy3 {
+
+    animation-name: mrpickle_happy3;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy3 {
+    0% {
+        background-position: 0% 33%;
+    }
+    100% {
+        background-position: 200% 33%;
+    }
+
+}
+
+.mrpickle_happy4 {
+
+    animation-name: mrpickle_happy4;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy4 {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+
+}
+
+.mrpickle_happy5 {
+
+    animation-name: mrpickle_happy5;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy5 {
+    0% {
+        background-position: 0% 67%;
+    }
+    100% {
+        background-position: 200% 67%;
+    }
+
+}
+
+.mrpickle_happy6 {
+
+    animation-name: mrpickle_happy6;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy6 {
+    0% {
+        background-position: 0% 84%;
+    }
+    100% {
+        background-position: 200% 84%;
+    }
+
+}
+
+.mrpickle_happy7 {
+
+    animation-name: mrpickle_happy7;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy7 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+
+}
+
+
+
 /* ___________ BILLEDE POSITIONS KLASSIFIKATIONER START -----------*/
 
 /* PASSENDE */
