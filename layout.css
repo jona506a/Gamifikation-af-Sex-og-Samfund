@@ -3,8 +3,31 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "futura-pt", sans-serif;
+    font-size: 16px;
 }
 
+/* -----------TYPOGRAFI----------- */
+
+h1 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+p {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* -----------SCENE----------- */
 
 #scene {
     width: 100vw;
