@@ -73,11 +73,13 @@ function del_klik() {
 
     if (er_den_passende == true) {
 
-        the_score++;
+        pickle_score++;
 
     } else {
+        pickle_score--;
 
     }
+
     styr_mr_pickle();
     startSpm();
 }
@@ -88,30 +90,67 @@ function del_ikke_klik() {
 
     if (er_den_passende == true) {
 
-
+        pickle_score++;
 
     } else {
-        the_score++;
+        pickle_score--;
+
     }
+
+
     styr_mr_pickle();
     startSpm();
 }
 
 function styr_mr_pickle() {
     console.log("PICKLE ANIMATION");
-    if (pickle_score == 1) {
+    if (pickle_score == 7) {
+        $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy1");
 
 
-    } else if (pickle_score == 2) {
-        $("#mrpickle_sprite").removeClass("mrpickle_happy1");
+    }
+    if (pickle_score == 6) {
+        $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy2");
 
     }
-    //Logik til mr Pickles spritesheet
-    //    if else if etc.
 
 }
+if (pickle_score == 5) {
+    $("#mrpickle_sprite").removeClass();
+    $("#mrpickle_sprite").addClass("mrpickle_happy3");
+
+}
+
+if (pickle_score == 4) {
+    $("#mrpickle_sprite").removeClass();
+    $("#mrpickle_sprite").addClass("mrpickle_happy4");
+
+}
+
+if (pickle_score == 3) {
+    $("#mrpickle_sprite").removeClass();
+    $("#mrpickle_sprite").addClass("mrpickle_happy5");
+
+}
+
+if (pickle_score == 2) {
+    $("#mrpickle_sprite").removeClass();
+    $("#mrpickle_sprite").addClass("mrpickle_happy6");
+
+}
+
+
+if (pickle_score == 1) {
+    $("#mrpickle_sprite").removeClass();
+    $("#mrpickle_sprite").addClass("mrpickle_happy7");
+
+}
+//Logik til mr Pickles spritesheet
+//    if else if etc.
+
+
 
 function randomValg1() {
     console.log("random valg");
@@ -133,6 +172,7 @@ function upassende() {
     $("#upassende_sprite").show();
     $("#passende_sprite").hide();
 
+    var er_den_passende = true;
     var mitRandomTalX = Math.floor(Math.random() * 2);
     var mitRandomTalY = Math.floor(Math.random() * 9);
     console.log("mitRandomTalX", mitRandomTalX);
@@ -148,6 +188,7 @@ function passende() {
     $("#passende_sprite").show();
     $("#upassende_sprite").hide();
 
+    var er_den_passende = true;
     var mitRandomTalX = Math.floor(Math.random() * 2);
     var mitRandomTalY = Math.floor(Math.random() * 4);
     console.log("mitRandomTalX", mitRandomTalX);
