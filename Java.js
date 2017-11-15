@@ -56,15 +56,15 @@ function niveau1() {
         svar_tid = 6000;
 
     }
-    if (niveau1_klik == 12) {
+    if (niveau1_klik == 13) {
         // timertiden skal sættes ned
         svar_tid = 4000;
 
-    } else if (niveau1_klik == 16) {
+    } else if (niveau1_klik == 17) {
         svar_tid = 2000;
 
     }
-    if (niveau1_klik == 20) {
+    if (niveau1_klik == 21) {
         // timertiden skal sættes ned
         svar_tid = 400;
 
