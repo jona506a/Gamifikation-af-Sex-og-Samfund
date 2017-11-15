@@ -8,8 +8,11 @@
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="layout.css">
 
-    <!-- INDSÆT FAVIKON START -->
-    <!-- INDSÆT FAVIKON SLUT -->
+    <!-- FAVIcON START -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- FAVIcON SLUT -->
     <!-- INDSÆT FONT START -->
     <!-- INDSÆT FONT SLUT -->
 </head>
@@ -29,7 +32,7 @@
         </div>
         <div id="billede_container">
             <div id="passende_sprite"></div>
-            <div id="upassende_sprite"></div>
+            <div id="upassende_sprite">></div>
         </div>
         <!-- MELLEMGRUND SLUT -->
 
@@ -61,10 +64,20 @@
 
     </div>
 
+    <!--JAVASCRIPT-->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="Java.js"></script>
 
+    <!--Futura PT-->
+    <script src="https://use.typekit.net/esy5ejd.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+
+    </script>
 </body>
-<!--JAVASCRIPT-->
-<script src="jquery-3.2.1.min.js"></script>
-<script src="Java.js"></script>
 
 </html>
