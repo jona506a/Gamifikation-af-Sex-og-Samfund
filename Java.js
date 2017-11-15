@@ -34,7 +34,7 @@ function startSpm() {
     $("#billede_container").removeClass();
     $("#passende_sprite").addClass("billed_postn");
     $("#upassende_sprite").addClass("billed_postn");
-    if (niveau1_klik == 35) {
+    if (niveau1_klik == 40) {
         console.log("Spillet er Slut!");
         spil_slut_random();
 
@@ -54,8 +54,8 @@ function tidenErGaaet() {
 
     if (er_den_passende == true) {
         console.log("passende delt");
-        $("#success").removeClass();
-        $("#success")[0].play();
+        $("#fail").removeClass();
+        $("#fail")[0].play();
         pickle_score--;
         $("#passende_sprite").removeClass();
         $("#passende_sprite").addClass("out_left");
@@ -84,34 +84,48 @@ function niveau1() {
     niveau1_klik++;
     console.log("niveau1_klik", niveau1_klik);
     if (niveau1_klik == 5) {
-
+        console.log("LEVEL 2");
+        $("#fade-text_level2").removeClass("invisible");
+        $("#fade-text_level2").addClass("fill");
+        $("#fade-text_level2").addClass("stroke");
         // timertiden skal sættes ned
         svar_tid = 8000;
         clearTimeout();
 
     } else if (niveau1_klik == 9) {
         svar_tid = 6000;
-        $("#fade-text_level2").removeClass("invisible");
-        $("#fade-text_level2").addClass("fill");
-        $("#fade-text_level2").addClass("stroke");
+        console.log("LEVEL 3");
+        $("#fade-text_level3").removeClass("invisible");
+        $("#fade-text_level3").addClass("fill");
+        $("#fade-text_level3").addClass("stroke");
         clearTimeout();
     }
     if (niveau1_klik == 12) {
         // timertiden skal sættes ned
         svar_tid = 4000;
-        $("#fade-text_level3").removeClass("invisible");
-        $("#fade-text_level3").addClass("fill");
-        $("#fade-text_level3").addClass("stroke");
+        console.log("LEVEL 4");
+        $("#fade-text_level4").removeClass("invisible");
+        $("#fade-text_level4").addClass("fill");
+        $("#fade-text_level4").addClass("stroke");
         clearTimeout();
 
     } else if (niveau1_klik == 16) {
         svar_tid = 2000;
+        console.log("LEVEL 5");
+        $("#fade-text_level5").removeClass("invisible");
+        $("#fade-text_level5").addClass("fill");
+        $("#fade-text_level5").addClass("stroke");
+
         clearTimeout();
 
     }
     if (niveau1_klik == 20) {
         // timertiden skal sættes ned
         svar_tid = 300;
+        console.log("LEVEL 6");
+
+
+
         clearTimeout();
 
 
@@ -135,7 +149,6 @@ function del_klik() {
 
     if (er_den_passende == true) {
         console.log("passende delt");
-        $("#success").removeClass();
         $("#success")[0].play();
         pickle_score++;
         $("#passende_sprite").removeClass("billed_postn");
@@ -165,8 +178,7 @@ function del_ikke_klik() {
 
     if (er_den_passende == true) {
         console.log("passende ikke delt");
-        $("#success").removeClass();
-        $("#success")[0].play();
+
         $("#passende_sprite").removeClass("billed_postn");
         $("#passende_sprite").addClass("out_right");
         console.log("out_right");
