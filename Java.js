@@ -7,6 +7,9 @@ var the_score = 0;
 var theTimer;
 var svar_tid = 10000;
 var pickle_score = 8;
+$("#payoff1").hide();
+
+$("#payoff2").hide();
 
 function StartStory() {
     //  console.log("Historien er startet");
@@ -306,24 +309,34 @@ function knapperOff() {
 
 }
 
-function spil_slut_payoff() {
+function spil_slut_random() {
     console.log("spil slut payoff");
 
     // Vi laver variablen her, fordi
     var random = Math.random();
     // var random = 1;
     if (random > 0.5) {
-        payoff_1();
+        payoff_1_1();
 
     } else {
-        payoff_2();
+        payoff_2_1();
 
     }
 }
 
-function payoff_1() {}
+function payoff_1_1() {
 
-function payoff_2() {}
+    $("#payoff1").addClass("pay1");
+    $("#payoff1").show();
+
+
+
+}
+
+function payoff_2_1() {
+
+    $("#payoff2").show();
+}
 //---- NIVEAU2 START -----
 /*
 function niveau2() {

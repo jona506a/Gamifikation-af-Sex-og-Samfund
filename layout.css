@@ -257,7 +257,48 @@ svg {
     cursor: pointer;
 }
 
-/* -----------KNAPPER SLUT----------- */
+/* -----------PAYOFF SCALE----------- */
+
+#payoff1 {
+    z-index: 6;
+    background-image: url(image/payoff1_1.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 16vw;
+    height: 9vw;
+    top: 20vw;
+    left: 44vw;
+
+}
+
+.pay1 {
+    animation-name: pay1;
+    animation-iteration-count: 1;
+    animation-duration: 2;
+
+}
+
+@keyframes pay1 {
+    0% {
+        transform: scale(0%);
+
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+#payoff2 {
+    z-index: 6;
+    background-image: url(image/payoff2_1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 16vw;
+    height: 9vw;
+}
+
+
 
 /* -----------BILLEDE CONTAINER START----------- */
 
