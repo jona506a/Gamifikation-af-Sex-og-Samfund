@@ -154,7 +154,7 @@ function styr_mr_pickle() {
     }
 
 
-    if (pickle_score == 2) {
+    if (pickle_score == 1) {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy7");
 
