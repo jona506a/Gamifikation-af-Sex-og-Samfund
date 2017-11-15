@@ -3,8 +3,31 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "futura-pt", sans-serif;
+    font-size: 16px;
 }
 
+/* -----------TYPOGRAFI----------- */
+
+h1 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+p {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* -----------SCENE----------- */
 
 #scene {
     width: 100vw;
@@ -131,7 +154,6 @@ body {
 }
 
 .billed_postn {
-    position: absolute;
     top: 29%;
     left: 29%;
 }
@@ -140,7 +162,7 @@ body {
 
 .out_left {
     animation: out_kf;
-    animation-duration: 1s;
+    animation-duration: 500ms;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-fill-mode: both;
@@ -163,7 +185,7 @@ body {
 
 .out_right {
     animation: out_right_kf;
-    animation-duration: 1s;
+    animation-duration: 500ms;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-fill-mode: both;
@@ -182,6 +204,7 @@ body {
         transform: translate(170%, -20%);
     }
 }
+
 
 /* -----------BILLEDE CONTAINER SLUT----------- */
 
@@ -834,8 +857,6 @@ body {
         background-position: 0 50%;
     }
 }
-
-
 
 
 /* ___________ BILLEDE POSITIONS KLASSIFIKATIONER SLUT -----------*/

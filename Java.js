@@ -82,40 +82,57 @@ function niveau1() {
 
 function del_klik() {
 
-
-
     if (er_den_passende == true) {
         console.log("passende delt");
-        $("#passende_sprite").addClass("out_left");
 
         pickle_score++;
+        $("#passende_sprite").removeClass("billed_postn");
+        $("#passende_sprite").addClass("out_left");
+        console.log("out_left");
+        $("#passende_sprite").on("animationend", startPositon);
 
     } else {
         pickle_score--;
+        $("#upassende_sprite").removeClass("billed_postn");
         $("#upassende_sprite").addClass("out_left");
+        console.log("out_right");
+        $("#upassende_sprite").on("animationend", startPositon);
     }
-
-
     styr_mr_pickle();
-    startSpm();
+    $("#passende_sprite").on("animationend", startSpm);
+    $("#upassende_sprite").on("animationend", startSpm);
+
 }
 
 function del_ikke_klik() {
 
-
-
     if (er_den_passende == true) {
-        console.log("passende ikke delt");
+        console.log("upassende ikke delt");
+        $("#passende_sprite").removeClass("billed_postn");
         $("#passende_sprite").addClass("out_right");
-
+        console.log("out_right");
+        $("#passende_sprite").on("animationend", startPositon);
     } else {
         pickle_score++;
+        $("#upassende_sprite").removeClass("billed_postn");
         $("#upassende_sprite").addClass("out_right");
+        console.log("out_left");
+        $("#upassende_sprite").on("animationend", startPositon);
     }
-
-
     styr_mr_pickle();
-    startSpm();
+    $("#passende_sprite").on("animationend", startSpm);
+    $("#upassende_sprite").on("animationend", startSpm);
+}
+
+function startPositon() {
+    console.log("startPositon");
+
+    $("#passende_sprite").removeClass("out_left");
+    $("#passende_sprite").removeClass("out_right");
+    $("#upassende_sprite").removeClass("out_left");
+    $("#upassende_sprite").removeClass("out_right");
+    $("#passende_sprite").addClass("billed_postn");
+    $("#upassende_sprite").addClass("billed_postn");
 }
 
 
