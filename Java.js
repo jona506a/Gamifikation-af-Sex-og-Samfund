@@ -1,3 +1,4 @@
+// test github push
 $(window).on("load", StartStory);
 var niveau1_klik = 0;
 var er_niveau1_faerdig = false;
