@@ -19,8 +19,9 @@ function startSpm() {
     //$("#billede_container").removeClass();
     //$("#billede_container").addClass(billed_postn);
     console.log("START spørgsmål the_score", the_score);
-    knapperOff();
+
     clearTimeout(theTimer);
+
     $("#passende_sprite").removeClass("out_left");
     $("#passende_sprite").removeClass("out_right");
     $("#upassende_sprite").removeClass("out_left");
@@ -67,6 +68,7 @@ function tidenErGaaet() {
     }
     styr_mr_pickle();
     setTimeout(startSpm, 500);
+    knapperOff();
 
 
 }
@@ -106,6 +108,7 @@ function niveau1() {
         // timertiden skal sættes ned
         svar_tid = 300;
         clearTimeout();
+
 
     }
 
@@ -147,6 +150,7 @@ function del_klik() {
 
     styr_mr_pickle();
     setTimeout(startSpm, 500);
+    knapperOff();
 
 
 }
@@ -172,6 +176,7 @@ function del_ikke_klik() {
     }
     styr_mr_pickle();
     setTimeout(startSpm, 500);
+    knapperOff();
 
 }
 
@@ -297,6 +302,7 @@ function passende() {
 function knapperOff() {
     $("#knap_del").off("click");
     $("#knap_del_ikke").off("click");
+    setTimeout(500);
 
 }
 
