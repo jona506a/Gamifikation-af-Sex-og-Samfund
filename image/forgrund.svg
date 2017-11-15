@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 0;
+      }
+
+      .cls-1 {
+        stroke: #000;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        stroke: #0b357f;
+      }
+    </style>
+  </defs>
+  <title>iphone-frame</title>
+  <g id="Layer_3" data-name="Layer 3">
+    <image width="11" height="10" transform="translate(815 182)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAAsSAAALEgHS3X78AAABFUlEQVQYV1WRS0vDQBSF55FkMhNLbZNWpbVFWm0KrSG2C8GViKBudCGFIlbUnaDgRkQRf/rxZoYSszir+91z7oMBYGuZ2TfM/Lei//USPPqEPnyDmX3B5B9WevJSaXBg4ULFMH20QDh+Qjh6gBouoLN3BL0L28DWcXr6CjVaQR3cIdi7hk+A3zmF155DbqYlHI6fCbwn6AZqcAtv6xiylUM2UoioC64aYJ5BCe8v4XfP4O+eQyYZRK0Prltgfg1MKrIVBfxD862ss43dPoFsTsCjDngYE7zhYC7dlsVSQe8SMp46ULcpVjuJgMaIUV6D7hv0ryws6gNyTKwbV03rKOOshAsV55H1IYTZoeiIIAEvyStP+QNfZbvjhKPTLAAAAABJRU5ErkJggg=="/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <g>
+        <path d="M820.48,1547.41v6.8H372.26A58.48,58.48,0,0,1,314,1495.9V179.68a58.48,58.48,0,0,1,58.31-58.31H820.48v6.8H372.26a51.56,51.56,0,0,0-51.5,51.51V1495.9a51.56,51.56,0,0,0,51.5,51.51Z"/>
+        <path d="M1268.69,121.37A58.48,58.48,0,0,1,1327,179.68V1495.9a58.48,58.48,0,0,1-58.31,58.31H820.48v-6.8h448.21a51.57,51.57,0,0,0,51.51-51.51V179.68a51.57,51.57,0,0,0-51.51-51.51H820.48v-6.8Z"/>
+        <path d="M820.48,180.15a7,7,0,0,1,0,14.09V180.15Z"/>
+        <path d="M813.43,187.19a7.05,7.05,0,0,0,7.05,7.05V237.4H383.94V1414.18H820.48v133.23H372.26a51.56,51.56,0,0,1-51.5-51.51V179.68a51.56,51.56,0,0,1,51.5-51.51H820.48v52A7,7,0,0,0,813.43,187.19Z"/>
+        <path d="M1320.2,179.68V1495.9a51.57,51.57,0,0,1-51.51,51.51H820.48V1414.18H1265V237.4H820.48V194.24a7,7,0,0,0,0-14.09v-52h448.21A51.57,51.57,0,0,1,1320.2,179.68Z"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M820.48,1547.41h448.21a51.57,51.57,0,0,0,51.51-51.51V179.68a51.57,51.57,0,0,0-51.51-51.51H820.48"/>
+        <path class="cls-1" d="M820.48,128.17H372.26a51.56,51.56,0,0,0-51.5,51.51V1495.9a51.56,51.56,0,0,0,51.5,51.51H820.48"/>
+        <path class="cls-1" d="M820.48,194.24a7,7,0,0,0,0-14.09"/>
+        <path class="cls-1" d="M820.48,194.24a7,7,0,1,1,0-14.09"/>
+        <path class="cls-2" d="M816.73,188.15a2.1,2.1,0,0,0,1.64.79,2,2,0,0,0,.72-.14"/>
+        <path class="cls-3" d="M819.09,188.8a2.09,2.09,0,0,0,1.39-2"/>
+        <path class="cls-3" d="M816.73,188.15a2.11,2.11,0,1,1,3.75-1.32"/>
+        <path class="cls-2" d="M816.73,188.15a1.23,1.23,0,0,1,1.19-1,1.25,1.25,0,0,1,1.25,1.25,1.05,1.05,0,0,1-.08.36"/>
+        <path class="cls-2" d="M816.73,188.15a1.5,1.5,0,0,0-.06.29,1.25,1.25,0,0,0,1.25,1.25,1.23,1.23,0,0,0,1.17-.89"/>
+        <polyline class="cls-2" points="820.48 237.4 383.94 237.4 383.94 1414.18 820.48 1414.18"/>
+        <polyline class="cls-2" points="820.48 237.4 1265.01 237.4 1265.01 1414.18 820.48 1414.18"/>
+      </g>
+    </g>
+  </g>
+</svg>
