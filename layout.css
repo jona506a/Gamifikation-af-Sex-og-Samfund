@@ -8,6 +8,14 @@ body {
     font: 16em 'Open Sans', sans-serif;
 }
 
+/* -----------PRELOAD START----------- */
+
+#preload {
+    display: none;
+}
+
+/* -----------PRELOAD SLUT----------- */
+
 /* -----------TYPOGRAFI----------- */
 
 h1 {

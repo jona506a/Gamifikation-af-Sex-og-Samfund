@@ -23,6 +23,7 @@ function startSpm() {
     clearTimeout(theTimer);
     if (niveau1_klik == 40) {
         console.log("Spillet er Slut!");
+        spil_slut_random();
 
 
     } else {
@@ -291,6 +292,24 @@ function knapperOff() {
 
 }
 
+function spil_slut_payoff() {
+    console.log("spil slut payoff");
+
+    // Vi laver variablen her, fordi
+    var random = Math.random();
+    // var random = 1;
+    if (random > 0.5) {
+        payoff_1();
+
+    } else {
+        payoff_2();
+
+    }
+}
+
+function payoff_1() {}
+
+function payoff_2() {}
 //---- NIVEAU2 START -----
 /*
 function niveau2() {
