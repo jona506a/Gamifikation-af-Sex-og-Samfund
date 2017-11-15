@@ -63,6 +63,7 @@ function tidenErGaaet() {
 
 }
 
+/*************** SPIL LEVELS HÉR ******************/
 function niveau1() {
 
     niveau1_klik++;
@@ -75,11 +76,17 @@ function niveau1() {
 
     } else if (niveau1_klik == 9) {
         svar_tid = 6000;
+        $("#fade-text_level2").removeClass("invisible");
+        $("#fade-text_level2").addClass("fill");
+        $("#fade-text_level2").addClass("stroke");
         clearTimeout();
     }
     if (niveau1_klik == 12) {
         // timertiden skal sættes ned
-        svar_tid = 4000
+        svar_tid = 4000;
+        $("#fade-text_level3").removeClass("invisible");
+        $("#fade-text_level3").addClass("fill");
+        $("#fade-text_level3").addClass("stroke");
         clearTimeout();
 
     } else if (niveau1_klik == 16) {
