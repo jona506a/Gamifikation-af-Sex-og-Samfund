@@ -7,6 +7,14 @@ body {
     font-size: 16px;
 }
 
+/* -----------PRELOAD START----------- */
+
+#preload {
+    display: none;
+}
+
+/* -----------PRELOAD SLUT----------- */
+
 /* -----------TYPOGRAFI----------- */
 
 h1 {
