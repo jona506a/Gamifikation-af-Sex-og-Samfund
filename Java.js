@@ -24,6 +24,7 @@ function startSpm() {
     if (niveau1_klik == 40) {
         console.log("Spillet er Slut!");
 
+
     } else {
         niveau1();
         theTimer = setTimeout(tidenErGaaet, svar_tid);
@@ -37,7 +38,7 @@ function startSpm() {
 function tidenErGaaet() {
     console.log("tiden er gået");
 
-
+    pickle_score--;
 
     startSpm();
 
