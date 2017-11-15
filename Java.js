@@ -21,6 +21,13 @@ function startSpm() {
     console.log("START spørgsmål the_score", the_score);
     knapperOff();
     clearTimeout(theTimer);
+    $("#passende_sprite").removeClass("out_left");
+    $("#passende_sprite").removeClass("out_right");
+    $("#upassende_sprite").removeClass("out_left");
+    $("#upassende_sprite").removeClass("out_right");
+    $("#billede_container").removeClass();
+    $("#passende_sprite").addClass("billed_postn");
+    $("#upassende_sprite").addClass("billed_postn");
     if (niveau1_klik == 40) {
         console.log("Spillet er Slut!");
         spil_slut_random();
@@ -97,7 +104,7 @@ function niveau1() {
     }
     if (niveau1_klik == 20) {
         // timertiden skal sættes ned
-        svar_tid = 400;
+        svar_tid = 300;
         clearTimeout();
 
     }
@@ -175,6 +182,7 @@ function startPositon() {
     $("#passende_sprite").removeClass("out_right");
     $("#upassende_sprite").removeClass("out_left");
     $("#upassende_sprite").removeClass("out_right");
+    $("#billede_container").removeClass();
     $("#passende_sprite").addClass("billed_postn");
     $("#upassende_sprite").addClass("billed_postn");
 }
