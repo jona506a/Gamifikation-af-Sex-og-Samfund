@@ -81,15 +81,17 @@ function niveau1() {
 
 function del_klik() {
 
-    // $("#passende_sprite").addClass("out_left");
+
 
     if (er_den_passende == true) {
         console.log("passende delt");
+        $("#passende_sprite").addClass("out_left");
 
         pickle_score++;
 
     } else {
         pickle_score--;
+        $("#upassende_sprite").addClass("out_left");
     }
 
 
@@ -99,13 +101,15 @@ function del_klik() {
 
 function del_ikke_klik() {
 
-    // $("#upassende_sprite").addClass("out_right");
+
 
     if (er_den_passende == true) {
         console.log("passende ikke delt");
+        $("#passende_sprite").addClass("out_right");
 
     } else {
         pickle_score++;
+        $("#upassende_sprite").addClass("out_right");
     }
 
 
@@ -189,8 +193,6 @@ function upassende() {
     var er_den_upassende = true;
     var mitRandomTalX = Math.floor(Math.random() * 2);
     var mitRandomTalY = Math.floor(Math.random() * 9);
-    console.log("mitRandomTalX", mitRandomTalX);
-    console.log("mitRandomTalY", mitRandomTalY);
     $("#upassende_sprite").css("background-position", (-mitRandomTalX * 100) + "% " + (-mitRandomTalY * 100) + "%");
 
     //  niveau1_restart();
@@ -205,8 +207,6 @@ function passende() {
     var er_den_passende = true;
     var mitRandomTalX = Math.floor(Math.random() * 2);
     var mitRandomTalY = Math.floor(Math.random() * 4);
-    console.log("mitRandomTalX", mitRandomTalX);
-    console.log("mitRandomTalY", mitRandomTalY);
     $("#passende_sprite").css("background-position", (-mitRandomTalX * 100) + "% " + (-mitRandomTalY * 100) + "%");
 
     //  niveau1_restart();
