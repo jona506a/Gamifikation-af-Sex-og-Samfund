@@ -32,7 +32,7 @@ function startSpm() {
     $("#billede_container").removeClass();
     $("#passende_sprite").addClass("billed_postn");
     $("#upassende_sprite").addClass("billed_postn");
-    if (niveau1_klik == 40) {
+    if (niveau1_klik == 35) {
         console.log("Spillet er Slut!");
         spil_slut_random();
 
