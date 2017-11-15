@@ -52,8 +52,8 @@ function tidenErGaaet() {
 
     if (er_den_passende == true) {
         console.log("passende delt");
-        $("#fail").removeClass();
-        $("#fail")[0].play();
+        $("#success").removeClass();
+        $("#success")[0].play();
         pickle_score--;
         $("#passende_sprite").removeClass();
         $("#passende_sprite").addClass("out_left");
@@ -133,6 +133,7 @@ function del_klik() {
 
     if (er_den_passende == true) {
         console.log("passende delt");
+        $("#success").removeClass();
         $("#success")[0].play();
         pickle_score++;
         $("#passende_sprite").removeClass("billed_postn");
@@ -162,7 +163,8 @@ function del_ikke_klik() {
 
     if (er_den_passende == true) {
         console.log("passende ikke delt");
-
+        $("#success").removeClass();
+        $("#success")[0].play();
         $("#passende_sprite").removeClass("billed_postn");
         $("#passende_sprite").addClass("out_right");
         console.log("out_right");
