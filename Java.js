@@ -6,7 +6,7 @@ var er_den_upassende;
 var the_score = 0;
 var theTimer;
 var svar_tid = 10000;
-var pickle_score = 4;
+var pickle_score = 8;
 
 function StartStory() {
     //  console.log("Historien er startet");
@@ -104,8 +104,6 @@ function del_ikke_klik() {
     if (er_den_passende == true) {
         console.log("passende ikke delt");
 
-        pickle_score++;
-
     } else {
         pickle_score++;
     }
@@ -119,44 +117,44 @@ function del_ikke_klik() {
 
 function styr_mr_pickle() {
     console.log("PICKLE ANIMATION");
-    if (pickle_score == 7) {
+    if (pickle_score == 14) {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy1");
 
 
     }
-    if (pickle_score == 6) {
+    if (pickle_score == 12) {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy2");
 
 
     }
-    if (pickle_score == 5) {
+    if (pickle_score == 10) {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy3");
 
     }
 
-    if (pickle_score == 4) {
+    if (pickle_score == 8) {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy4");
 
     }
 
-    if (pickle_score == 3) {
+    if (pickle_score == 6) {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy5");
 
     }
 
-    if (pickle_score == 2) {
+    if (pickle_score == 4) {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy6");
 
     }
 
 
-    if (pickle_score == 1) {
+    if (pickle_score == 2) {
         $("#mrpickle_sprite").removeClass();
         $("#mrpickle_sprite").addClass("mrpickle_happy7");
 
