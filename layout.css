@@ -175,19 +175,19 @@ svg {
 }
 
 #del_tekst {
-    font-size: 4vw;
+    font-size: 3.8vw;
     position: absolute;
-    top: 43vw;
+    top: 42.9vw;
     left: 15vw;
-    transform: rotate(-7deg);
+    transform: rotate(-5deg);
 }
 
 #del_ikke_tekst {
     font-size: 2.9vw;
     position: absolute;
-    top: 43vw;
-    left: 27.8vw;
-    transform: rotate(-7deg);
+    top: 43.3vw;
+    left: 27.4vw;
+    transform: rotate(-5deg);
 }
 
 /* -----------START SCENE SLUT----------- */
