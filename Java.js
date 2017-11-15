@@ -38,9 +38,25 @@ function startSpm() {
 function tidenErGaaet() {
     console.log("tiden er gået");
 
-    pickle_score--;
+    if (er_den_passende == true) {
+        console.log("passende delt");
 
-    startSpm();
+        pickle_score--;
+        $("#passende_sprite").removeClass();
+        $("#passende_sprite").addClass("out_left");
+        console.log("out_left");
+        $("#passende_sprite").on("animationend", startPositon);
+
+    } else {
+        pickle_score--;
+        $("#upassende_sprite").removeClass();
+        $("#upassende_sprite").addClass("out_left");
+        console.log("out_right");
+        $("#upassende_sprite").on("animationend", startPositon);
+    }
+    styr_mr_pickle();
+    setTimeout(startSpm, 500);
+
 
 }
 
@@ -51,24 +67,32 @@ function niveau1() {
     if (niveau1_klik == 5) {
         // timertiden skal sættes ned
         svar_tid = 8000;
+        clearTimeout();
 
     } else if (niveau1_klik == 9) {
         svar_tid = 6000;
-
+        clearTimeout();
     }
-    if (niveau1_klik == 13) {
+    if (niveau1_klik == 12) {
         // timertiden skal sættes ned
-        svar_tid = 4000;
+        svar_tid = 4000
+        clearTimeout();
 
-    } else if (niveau1_klik == 17) {
+    } else if (niveau1_klik == 16) {
         svar_tid = 2000;
+        clearTimeout();
 
     }
-    if (niveau1_klik == 21) {
+    if (niveau1_klik == 20) {
         // timertiden skal sættes ned
         svar_tid = 400;
+        clearTimeout();
 
     }
+
+
+
+    clearTimeout(theTimer);
     console.log("svar_tid", svar_tid);
 
     randomValg1();
@@ -98,9 +122,10 @@ function del_klik() {
         console.log("out_right");
         $("#upassende_sprite").on("animationend", startPositon);
     }
+
     styr_mr_pickle();
-    $("#passende_sprite").on("animationend", startSpm);
-    $("#upassende_sprite").on("animationend", startSpm);
+    setTimeout(startSpm, 500);
+
 
 }
 
@@ -120,8 +145,8 @@ function del_ikke_klik() {
         $("#upassende_sprite").on("animationend", startPositon);
     }
     styr_mr_pickle();
-    $("#passende_sprite").on("animationend", startSpm);
-    $("#upassende_sprite").on("animationend", startSpm);
+    setTimeout(startSpm, 500);
+
 }
 
 function startPositon() {
@@ -211,6 +236,8 @@ function upassende() {
     var er_den_upassende = true;
     var mitRandomTalX = Math.floor(Math.random() * 2);
     var mitRandomTalY = Math.floor(Math.random() * 9);
+    console.log("mitRandomTalX", mitRandomTalX);
+    console.log("mitRandomTalY", mitRandomTalY);
     $("#upassende_sprite").css("background-position", (-mitRandomTalX * 100) + "% " + (-mitRandomTalY * 100) + "%");
 
     //  niveau1_restart();
@@ -225,6 +252,8 @@ function passende() {
     var er_den_passende = true;
     var mitRandomTalX = Math.floor(Math.random() * 2);
     var mitRandomTalY = Math.floor(Math.random() * 4);
+    console.log("mitRandomTalX", mitRandomTalX);
+    console.log("mitRandomTalY", mitRandomTalY);
     $("#passende_sprite").css("background-position", (-mitRandomTalX * 100) + "% " + (-mitRandomTalY * 100) + "%");
 
     //  niveau1_restart();
