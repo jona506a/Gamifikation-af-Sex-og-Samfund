@@ -40,7 +40,8 @@ function tidenErGaaet() {
 
     if (er_den_passende == true) {
         console.log("passende delt");
-
+        $("#fail").removeClass();
+        $("#fail")[0].play();
         pickle_score--;
         $("#passende_sprite").removeClass();
         $("#passende_sprite").addClass("out_left");
@@ -49,6 +50,8 @@ function tidenErGaaet() {
 
     } else {
         pickle_score--;
+        $("#fail").removeClass();
+        $("#fail")[0].play();
         $("#upassende_sprite").removeClass();
         $("#upassende_sprite").addClass("out_left");
         console.log("out_right");
@@ -65,6 +68,7 @@ function niveau1() {
     niveau1_klik++;
     console.log("niveau1_klik", niveau1_klik);
     if (niveau1_klik == 5) {
+
         // timertiden skal sættes ned
         svar_tid = 8000;
         clearTimeout();
@@ -108,7 +112,7 @@ function del_klik() {
 
     if (er_den_passende == true) {
         console.log("passende delt");
-
+        $("#success")[0].play();
         pickle_score++;
         $("#passende_sprite").removeClass("billed_postn");
         $("#passende_sprite").addClass("out_left");
@@ -117,6 +121,9 @@ function del_klik() {
 
     } else {
         pickle_score--;
+
+        $("#fail").removeClass();
+        $("#fail")[0].play();
         $("#upassende_sprite").removeClass("billed_postn");
         $("#upassende_sprite").addClass("out_left");
         console.log("out_right");
@@ -132,13 +139,17 @@ function del_klik() {
 function del_ikke_klik() {
 
     if (er_den_passende == true) {
-        console.log("upassende ikke delt");
+        console.log("passende ikke delt");
+
         $("#passende_sprite").removeClass("billed_postn");
         $("#passende_sprite").addClass("out_right");
         console.log("out_right");
         $("#passende_sprite").on("animationend", startPositon);
     } else {
         pickle_score++;
+
+        $("#success").removeClass();
+        $("#success")[0].play();
         $("#upassende_sprite").removeClass("billed_postn");
         $("#upassende_sprite").addClass("out_right");
         console.log("out_left");
