@@ -7,11 +7,13 @@ var the_score = 0;
 var theTimer;
 var svar_tid = 10000;
 var pickle_score = 8;
-$("#payoff1").hide();
 
-$("#payoff2").hide();
 
 function StartStory() {
+    $("#payoff1").hide();
+    $("#payoff2").hide();
+    $("#replay_knap").hide();
+    $("#mrpickle_spritepayoff2").hide();
     //  console.log("Historien er startet");
     $("#mrpickle_sprite").addClass("mrpickle_happy4");
     startSpm();
@@ -318,26 +320,35 @@ function spil_slut_random() {
     var random = Math.random();
     // var random = 1;
     if (random > 0.5) {
-        payoff_1_1();
+        payoff_1();
 
     } else {
-        payoff_2_1();
+        payoff_2();
 
     }
 }
 
-function payoff_1_1() {
-
+function payoff_1() {
+    console.log("payoff 1");
+    $("#payoff_container").addClass("payoff1");
     $("#payoff1").addClass("pay1");
-    $("#payoff1").show();
 
-
+    $("#payoff1").fadeIn(1500);
+    $("#replay_knap").fadeIn(1500);
+    $("#replay_knap").on("click");
 
 }
 
-function payoff_2_1() {
+function payoff_2() {
+    console.log("payoff 2");
+    $("#payoff_container").addClass("payoff2");
+    $("#mrpickle_spritepayoff2").addClass("mrpickle_kf");
+    $("#payoff2").fadeIn(1500);
+    $("#replay_knap").fadeIn(1500);
+    $("#mrpickle_spritepayoff2").fadeIn(1500);
+    // $("#payoff1").hide(1500);
+    $("#replay_knap").on("click");
 
-    $("#payoff2").show();
 }
 //---- NIVEAU2 START -----
 /*

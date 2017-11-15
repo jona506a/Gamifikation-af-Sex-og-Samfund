@@ -158,7 +158,7 @@ svg {
     z-index: 1;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(image/intro_scene_Artboard%201.svg);
+    background-image: url(image/intro_scene_Artboard_1.svg);
     background-size: 100%;
     position: absolute;
 }
@@ -259,45 +259,92 @@ svg {
 
 /* -----------PAYOFF SCALE----------- */
 
+#payoff_container {
+    position: absolute;
+}
+
+#replay_knap {
+    z-index: 7;
+    background-image: url(image/payoff_prov_igen.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 8vw;
+    left: 60vw;
+    top: 43vw;
+    cursor: pointer;
+
+}
+
 #payoff1 {
     z-index: 6;
     background-image: url(image/payoff1_1.svg);
     background-size: 100%;
     position: absolute;
     background-repeat: no-repeat;
-    width: 16vw;
-    height: 9vw;
-    top: 20vw;
-    left: 44vw;
-
+    width: 100vw;
+    height: 56.25vw;
 }
 
-.pay1 {
+
+/*.pay1 {
+    z-index: 7;
     animation-name: pay1;
     animation-iteration-count: 1;
-    animation-duration: 2;
-
+    animation-duration: 3s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
 }
+
 
 @keyframes pay1 {
     0% {
-        transform: scale(0%);
-
+        transform: scale(1.0);
     }
     100% {
-        transform: scale(100%);
+        transform: scale(2.5);
     }
-}
+}*/
 
 #payoff2 {
     z-index: 6;
     background-image: url(image/payoff2_1.svg);
     background-size: 100%;
     position: absolute;
-    width: 16vw;
-    height: 9vw;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
 }
 
+#mrpickle_spritepayoff2 {
+    z-index: 7;
+    width: 10vw;
+    height: 20vw;
+    background-image: url(image/charlie_sprite.svg);
+    background-size: 200%;
+    position: absolute;
+    top: 8vw;
+    left: 45vw;
+}
+
+.mrpickle_kf {
+    z-index: 7;
+    animation-name: mrpickle_happy7;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy7 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+
+}
 
 
 /* -----------BILLEDE CONTAINER START----------- */
