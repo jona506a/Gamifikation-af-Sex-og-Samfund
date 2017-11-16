@@ -559,7 +559,7 @@ svg {
     z-index: 3;
     width: 45vw;
     height: 30vw;
-    background-image: url(image/uartigbilleder_spritesheet.svg);
+    background-image: url(image/uartig-sprite_med_tekst_uartigbilleder_spritesheet.svg);
     background-size: 200% 900%;
     position: absolute;
     top: 29%;
@@ -572,7 +572,7 @@ svg {
     z-index: 3;
     width: 45vw;
     height: 30vw;
-    background-image: url(image/artigbilleder_spritesheet1.svg);
+    background-image: url(image/artig-sprite_med_tekst_ARTIGE-SPRITE.svg);
     background-size: 200%;
     position: absolute;
     top: 29%;
@@ -1069,7 +1069,7 @@ svg {
     z-index: 9;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(image/payoff1.svg);
+    background-image: url(image/payoff1-01.png);
     background-size: 100%;
     position: absolute;
 }
@@ -1078,7 +1078,7 @@ svg {
     z-index: 9;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(image/payoff2.svg);
+    background-image: url(image/payoff2-01.png);
     background-size: 100%;
     position: absolute;
 }
@@ -1088,7 +1088,7 @@ svg {
     z-index: 9;
     width: 22vw;
     height: 7vw;
-    background-image: url(image/payoff_chat.svg);
+    background-image: url(image/payoff_chat.png);
     background-size: 100%;
     position: absolute;
     top: 44vw;
@@ -1101,7 +1101,7 @@ svg {
     z-index: 9;
     width: 24vw;
     height: 7vw;
-    background-image: url(image/payoff_blevkasse.svg);
+    background-image: url(image/payoff_brevkasse.png);
     background-size: 100%;
     position: absolute;
     top: 44vw;
@@ -1112,7 +1112,7 @@ svg {
     z-index: 9;
     width: 38vw;
     height: 8vw;
-    background-image: url(image/payoff_prov_igen.svg);
+    background-image: url(image/prov_igen.png);
     background-size: 100%;
     position: absolute;
     top: 43.2vw;
