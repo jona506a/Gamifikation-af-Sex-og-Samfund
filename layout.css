@@ -3,8 +3,40 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "futura-pt", sans-serif;
+    /*font-size: 16px;*/
+    font: 16em 'Open Sans', sans-serif;
 }
 
+/* -----------PRELOAD START----------- */
+
+#preload {
+    display: none;
+}
+
+/* -----------PRELOAD SLUT----------- */
+
+/* -----------TYPOGRAFI----------- */
+
+h1 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+p {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* -----------SCENE----------- */
 
 #scene {
     width: 100vw;
@@ -15,13 +47,118 @@ body {
 
 /* -----------GENERALT SLUT----------- */
 
+/* -----------LEVELS ANI----------- */
+
+.stroke {
+    stroke: #f4912d;
+    stroke-width: 5px;
+    stroke-dasharray: 0 250;
+    stroke-opacity: 1;
+    fill: none;
+    animation: stroke_offset 4s;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes stroke_offset {
+    25% {
+        stroke-dasharray: 0 250;
+        stroke-opacity: 1;
+    }
+    50% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: .75;
+    }
+    55% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: 0;
+    }
+    70% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: 0;
+    }
+    75% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: .75;
+    }
+    100% {
+        stroke-dasharray: 0 250;
+        stroke-opacity: 1;
+    }
+}
+
+.fill {
+    fill: #007df3;
+    fill-opacity: 0;
+    animation: fill_offset 4s;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes fill_offset {
+    25% {
+        fill-opacity: 0;
+    }
+    35% {
+        fill-opacity: 0;
+    }
+    50% {
+        fill-opacity: 1;
+    }
+    70% {
+        fill-opacity: 1;
+    }
+    90% {
+        fill-opacity: 0;
+    }
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+
+#fade-text {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+.invisible {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+}
+
+#fade-text_level2 {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+#fade-text_level3 {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+#fade-text_level4 {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+#fade-text_level5 {
+    font-family: 'Open Sans', "futura-pt", Helvetica, Arial, sans-serif;
+    font-size: .5em;
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
 /* -----------START SCENE START----------- */
 
 #start_scene {
     z-index: 1;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(image/intro_scene_Artboard%201.svg);
+    background-image: url(image/intro_scene_Artboard_1.svg);
     background-size: 100%;
     position: absolute;
 }
@@ -38,19 +175,19 @@ body {
 }
 
 #del_tekst {
-    font-size: 4vw;
+    font-size: 3.8vw;
     position: absolute;
-    top: 43vw;
+    top: 42.9vw;
     left: 15vw;
-    transform: rotate(-7deg);
+    transform: rotate(-5deg);
 }
 
 #del_ikke_tekst {
     font-size: 2.9vw;
     position: absolute;
-    top: 43vw;
-    left: 27.8vw;
-    transform: rotate(-7deg);
+    top: 43.3vw;
+    left: 27.4vw;
+    transform: rotate(-5deg);
 }
 
 /* -----------START SCENE SLUT----------- */
@@ -120,7 +257,158 @@ body {
     cursor: pointer;
 }
 
-/* -----------KNAPPER SLUT----------- */
+/* -----------PAYOFF SCALE----------- */
+
+#payoff_container {
+    position: absolute;
+}
+
+#replay_knap {
+    z-index: 7;
+    background-image: url(image/payoff_prov_igen.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 8vw;
+    left: 60vw;
+    top: 43vw;
+    cursor: pointer;
+
+}
+
+#payoff1 {
+    z-index: 6;
+    background-image: url(image/payoff1_1.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+}
+
+
+/*.pay1 {
+    z-index: 7;
+    animation-name: pay1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes pay1 {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(2.5);
+    }
+}*/
+
+#payoff2 {
+    z-index: 6;
+    background-image: url(image/payoff2_1.svg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+}
+
+#mrpickle_spritepayoff2 {
+    z-index: 7;
+    width: 10vw;
+    height: 20vw;
+    background-image: url(image/charlie_sprite.svg);
+    background-size: 200%;
+    position: absolute;
+    top: 8vw;
+    left: 45vw;
+}
+
+.mrpickle_kf {
+    z-index: 7;
+    animation-name: mrpickle_happy7;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy7 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+
+}
+
+
+/* -----------BILLEDE CONTAINER START----------- */
+
+#billede_container {
+    position: absolute;
+    top: 29%;
+    left: 29%;
+}
+
+.billed_postn {
+    top: 29%;
+    left: 29%;
+}
+
+/***** BTNS TRIGGER ANI ****/
+
+.out_left {
+    animation: out_kf;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 4;
+}
+
+@keyframes out_kf {
+    0% {
+        top: 29%;
+        left: 29%;
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: translate(-170%, -20%);
+    }
+}
+
+.out_right {
+    animation: out_right_kf;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 4;
+}
+
+@keyframes out_right_kf {
+    0% {
+        top: 29%;
+        left: 29%;
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: translate(170%, -20%);
+    }
+}
+
+
+/* -----------BILLEDE CONTAINER SLUT----------- */
 
 /* -----------MR PICKLE START----------- */
 
@@ -136,6 +424,134 @@ body {
 }
 
 /* -----------MR PICKLE SLUT----------- */
+
+/*--------- mr pickle sprite -------------*/
+
+.mrpickle_happy1 {
+
+    animation-name: mrpickle_happy1;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy1 {
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+
+}
+
+.mrpickle_happy2 {
+
+    animation-name: mrpickle_happy2;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy2 {
+    0% {
+        background-position: 0% 17%;
+    }
+    100% {
+        background-position: 200% 17%;
+    }
+
+}
+
+.mrpickle_happy3 {
+
+    animation-name: mrpickle_happy3;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy3 {
+    0% {
+        background-position: 0% 33%;
+    }
+    100% {
+        background-position: 200% 33%;
+    }
+
+}
+
+.mrpickle_happy4 {
+
+    animation-name: mrpickle_happy4;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy4 {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+
+}
+
+.mrpickle_happy5 {
+
+    animation-name: mrpickle_happy5;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy5 {
+    0% {
+        background-position: 0% 67%;
+    }
+    100% {
+        background-position: 200% 67%;
+    }
+
+}
+
+.mrpickle_happy6 {
+
+    animation-name: mrpickle_happy6;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy6 {
+    0% {
+        background-position: 0% 84%;
+    }
+    100% {
+        background-position: 200% 84%;
+    }
+
+}
+
+.mrpickle_happy7 {
+
+    animation-name: mrpickle_happy7;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes mrpickle_happy7 {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+
+}
 
 /* -----------ARTIG BILLEDER START----------- */
 
@@ -156,7 +572,7 @@ body {
     z-index: 3;
     width: 45vw;
     height: 30vw;
-    background-image: url(image/artigbilleder_spritesheet.svg);
+    background-image: url(image/artigbilleder_spritesheet1.svg);
     background-size: 200%;
     position: absolute;
     top: 29%;
@@ -643,8 +1059,6 @@ body {
         background-position: 0 50%;
     }
 }
-
-
 
 
 /* ___________ BILLEDE POSITIONS KLASSIFIKATIONER SLUT -----------*/

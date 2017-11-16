@@ -1,52 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="471.41" height="112.87" viewBox="0 0 471.41 112.87">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #1ec500;
-        stroke-width: 0.91px;
-      }
-
-      .cls-1, .cls-2, .cls-5 {
-        stroke: #006837;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-2 {
-        font-size: 72px;
-        letter-spacing: 0.05em;
-      }
-
-      .cls-2, .cls-5 {
-        fill: #e9eced;
-        stroke-width: 0.94px;
-        font-family: FuturaPT-ExtraBold, Futura PT;
-        font-weight: 700;
-      }
-
-      .cls-3 {
-        letter-spacing: -0.02em;
-      }
-
-      .cls-4 {
-        letter-spacing: 0.05em;
-      }
-
-      .cls-5 {
-        font-size: 100px;
-        letter-spacing: 0.05em;
-      }
-    </style>
-  </defs>
-  <title>Asset 2</title>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="play-btn">
-      <rect class="cls-1" x="0.45" y="6.42" width="470.5" height="106" rx="18.12" ry="18.12"/>
-      <g id="PLAY">
-        <text class="cls-2" transform="translate(135.08 84.41) scale(0.88 1)">PL<tspan class="cls-3" x="93.17" y="0">A</tspan><tspan class="cls-4" x="144.43" y="0">Y </tspan></text>
-        <g id="arrow">
-          <text class="cls-5" transform="translate(317.77 83.82) scale(0.88 1)">»</text>
-        </g>
-      </g>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 471.4 112.9" style="enable-background:new 0 0 471.4 112.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1EC500;stroke:#006837;stroke-width:0.91;stroke-miterlimit:10;}
+	.st1{fill:#E9ECED;}
+	.st2{font-family:'FuturaPT-Bold';}
+	.st3{font-size:72px;}
+	.st4{letter-spacing:3.4;}
+	.st5{fill:none;stroke:#006837;stroke-width:0.94;stroke-miterlimit:10;}
+	.st6{letter-spacing:-1.1;}
+	.st7{font-size:100px;}
+	.st8{letter-spacing:4.5;}
+</style>
+<title>Asset 2</title>
+<g id="Layer_2">
+	<g id="play-btn">
+		<path class="st0" d="M18.6,6.4h434.3c10,0,18.1,8.1,18.1,18.1v69.8c0,10-8.1,18.1-18.1,18.1H18.6c-10,0-18.1-8.1-18.1-18.1V24.5
+			C0.4,14.5,8.6,6.4,18.6,6.4z"/>
+		<g id="PLAY">
+			<text transform="matrix(0.88 0 0 1 141.0801 84.4102)" class="st1 st2 st3 st4">PL</text>
+			<text transform="matrix(0.88 0 0 1 141.0801 84.4102)" class="st5 st2 st3 st4">PL</text>
+			<text transform="matrix(0.88 0 0 1 217.0693 84.4102)" class="st1 st2 st3 st6">A</text>
+			<text transform="matrix(0.88 0 0 1 217.0693 84.4102)" class="st5 st2 st3 st6">A</text>
+			<text transform="matrix(0.88 0 0 1 262.1787 84.4102)" class="st1 st2 st3 st4">Y</text>
+			<text transform="matrix(0.88 0 0 1 262.1787 84.4102)" class="st5 st2 st3 st4">Y</text>
+			<g id="arrow">
+				<text transform="matrix(0.88 0 0 1 317.7695 83.8198)" class="st1 st2 st7 st8">»</text>
+				<text transform="matrix(0.88 0 0 1 317.7695 83.8198)" class="st5 st2 st7 st8">»</text>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
