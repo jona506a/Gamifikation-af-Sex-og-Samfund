@@ -648,3 +648,59 @@ body {
 
 
 /* ___________ BILLEDE POSITIONS KLASSIFIKATIONER SLUT -----------*/
+
+/* ___________ PAYOFF START -----------*/
+
+#payoff1 {
+    z-index: 9;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/payoff1.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+#payoff2 {
+    z-index: 9;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(image/payoff2.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+#payoff_chat {
+    cursor: pointer;
+    z-index: 9;
+    width: 22vw;
+    height: 7vw;
+    background-image: url(image/payoff_chat.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 44vw;
+    left: 20vw;
+
+}
+
+#payoff_brevkasse {
+    cursor: pointer;
+    z-index: 9;
+    width: 24vw;
+    height: 7vw;
+    background-image: url(image/payoff_blevkasse.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 44vw;
+    left: 41vw;
+}
+
+#reset_knap {
+    z-index: 9;
+    width: 38vw;
+    height: 8vw;
+    background-image: url(image/payoff_prov_igen.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 43.2vw;
+    left: 63vw;
+}

@@ -2,10 +2,18 @@ $(window).on("load", StartStory);
 var niveau1_klik = 0;
 var er_niveau1_faerdig = false;
 
+$("#payoff1").hide();
+$("#payoff2").hide();
+$("#payoff_chat").hide();
+$("#payoff_brevkasse").hide();
+$("#reset_knap").hide();
+
 function StartStory() {
     console.log("Historien er startet");
+
     $("#mrpickle_sprite").addClass("mrpickle_sprite");
     niveau1();
+
 
 }
 
@@ -78,5 +86,38 @@ function niveau1_restart() {
 function niveau2() {
 
     console.log("Niveau 2 - start");
+
+}
+
+
+//---- NIVEAU3 START -----
+//Når niveau3 slutter og spillet tabes - ref. til random valg
+//---- NIVEAU3 SLUT -----
+
+//---- PAYOFF START -----
+random_payoff();
+
+function random_payoff() {
+    console.log("Random valg payoff");
+
+    if (Math.random() >= 0.5) {
+        vis_payoff1();
+    } else {
+        vis_payoff2();
+    }
+}
+
+function vis_payoff1() {
+    $("#payoff1").show();
+    $("#payoff_chat").show();
+    $("#payoff_brevkasse").show();
+    $("#reset_knap").show();
+}
+
+function vis_payoff2() {
+    $("#payoff2").show();
+    $("#payoff_chat").show();
+    $("#payoff_brevkasse").show();
+    $("#reset_knap").show();
 
 }
