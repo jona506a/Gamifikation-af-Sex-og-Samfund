@@ -9,7 +9,19 @@ var svar_tid = 10000;
 var pickle_score = 8;
 
 
+$("#payoff1").hide();
+$("#payoff2").hide();
+$("#payoff_chat").hide();
+$("#payoff_brevkasse").hide();
+$("#reset_knap").hide();
+
 function StartStory() {
+<<<<<<< HEAD
+    console.log("Historien er startet");
+
+    $("#mrpickle_sprite").addClass("mrpickle_sprite");
+    niveau1();
+=======
     $("#payoff1").hide();
     $("#payoff2").hide();
     $("#replay_knap").hide();
@@ -45,6 +57,8 @@ function startSpm() {
 
     }
 
+
+>>>>>>> origin/master
 
 
 }
@@ -369,4 +383,40 @@ function niveau2() {
     console.log("Niveau 2 - start");
 
 }
+<<<<<<< HEAD
+
+
+//---- NIVEAU3 START -----
+//Når niveau3 slutter og spillet tabes - ref. til random valg
+//---- NIVEAU3 SLUT -----
+
+//---- PAYOFF START -----
+random_payoff();
+
+function random_payoff() {
+    console.log("Random valg payoff");
+
+    if (Math.random() >= 0.5) {
+        vis_payoff1();
+    } else {
+        vis_payoff2();
+    }
+}
+
+function vis_payoff1() {
+    $("#payoff1").show();
+    $("#payoff_chat").show();
+    $("#payoff_brevkasse").show();
+    $("#reset_knap").show();
+}
+
+function vis_payoff2() {
+    $("#payoff2").show();
+    $("#payoff_chat").show();
+    $("#payoff_brevkasse").show();
+    $("#reset_knap").show();
+
+}
+=======
 */
+>>>>>>> origin/master
