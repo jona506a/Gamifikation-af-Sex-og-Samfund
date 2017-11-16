@@ -9,22 +9,12 @@ var svar_tid = 10000;
 var pickle_score = 8;
 
 
-$("#payoff1").hide();
-$("#payoff2").hide();
-$("#payoff_chat").hide();
-$("#payoff_brevkasse").hide();
-$("#reset_knap").hide();
-
 function StartStory() {
-<<<<<<< HEAD
-    console.log("Historien er startet");
-
-    $("#mrpickle_sprite").addClass("mrpickle_sprite");
-    niveau1();
-=======
     $("#payoff1").hide();
     $("#payoff2").hide();
+    $("#brevkasse_knap").hide();
     $("#replay_knap").hide();
+    $("#chat_knap").hide();
     $("#mrpickle_spritepayoff2").hide();
     //  console.log("Historien er startet");
     $("#mrpickle_sprite").addClass("mrpickle_happy4");
@@ -56,10 +46,6 @@ function startSpm() {
         theTimer = setTimeout(tidenErGaaet, svar_tid);
 
     }
-
-
->>>>>>> origin/master
-
 
 }
 
@@ -357,11 +343,13 @@ function spil_slut_random() {
 function payoff_1() {
     console.log("payoff 1");
     $("#payoff_container").addClass("payoff1");
-    $("#payoff1").addClass("pay1");
-
     $("#payoff1").fadeIn(1500);
+    $("#brevkasse_knap").fadeIn(1500);
+    $("#chat_knap").fadeIn(1500);
     $("#replay_knap").fadeIn(1500);
     $("#replay_knap").on("click");
+    $("#brevkasse_knap").on("click");
+    $("#chat_knap").on("click");
 
 }
 
@@ -370,53 +358,13 @@ function payoff_2() {
     $("#payoff_container").addClass("payoff2");
     $("#mrpickle_spritepayoff2").addClass("mrpickle_kf");
     $("#payoff2").fadeIn(1500);
+    $("#brevkasse_knap").fadeIn(1500);
+    $("#chat_knap").fadeIn(1500);
     $("#replay_knap").fadeIn(1500);
     $("#mrpickle_spritepayoff2").fadeIn(1500);
     // $("#payoff1").hide(1500);
     $("#replay_knap").on("click");
+    $("#brevkasse_knap").on("click");
+    $("#chat_knap").on("click");
 
 }
-//---- NIVEAU2 START -----
-/*
-function niveau2() {
-
-    console.log("Niveau 2 - start");
-
-}
-<<<<<<< HEAD
-
-
-//---- NIVEAU3 START -----
-//Når niveau3 slutter og spillet tabes - ref. til random valg
-//---- NIVEAU3 SLUT -----
-
-//---- PAYOFF START -----
-random_payoff();
-
-function random_payoff() {
-    console.log("Random valg payoff");
-
-    if (Math.random() >= 0.5) {
-        vis_payoff1();
-    } else {
-        vis_payoff2();
-    }
-}
-
-function vis_payoff1() {
-    $("#payoff1").show();
-    $("#payoff_chat").show();
-    $("#payoff_brevkasse").show();
-    $("#reset_knap").show();
-}
-
-function vis_payoff2() {
-    $("#payoff2").show();
-    $("#payoff_chat").show();
-    $("#payoff_brevkasse").show();
-    $("#reset_knap").show();
-
-}
-=======
-*/
->>>>>>> origin/master
